@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
-from django.conf import settings
 
 
 def home(request):
@@ -17,7 +16,7 @@ def contact(request):
 			message_name, # subject
 			message, # message
 			message_email, # from email
-			['info.wiped@gmail.com', 'jarryd.strydom@icloud.com'], # to Email
+			['info.wiped@gmail.com'], # to Email
 			)
 
 		return render(request, 'contact.html', {'message_name': message_name})
