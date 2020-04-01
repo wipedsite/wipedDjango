@@ -123,11 +123,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # accounts.google.com/DisplayUnlockCaptcha
 # myaccount.google.com/apppasswords
 # Email Settings
-EMAIL_HOST = ‘smtp.gmail.com’
 EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = ‘info.wiped@gmail.com’
-EMAIL_HOST_PASSWORD = ‘celebrity175’
+EMAIL_HOST_USER = 'info.wiped@gmail.com'
+EMAIL_HOST_PASSWORD = 'celebrity175'
+DEFAULT_FROM_EMAIL = 'info.wiped@gmail.com'
 
 
 django_heroku.settings(locals())

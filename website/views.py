@@ -17,6 +17,7 @@ def contact(request):
 			message, # message
 			message_email, # from email
 			['info.wiped@gmail.com'], # to Email
+			fail_silently=False,
 			)
 
 		return render(request, 'contact.html', {'message_name': message_name})
@@ -54,10 +55,11 @@ def booking(request):
 		# send an email
 		booking = " Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Date: " + your_date + " Time: " + your_time + " Message: " + your_message
 		send_mail(
-			Booking Request, # subject
+			'Booking Request', # subject
 			booking, # message
 			your_email, # from email
-			info.wiped@gmail.com # To Email
+			['info.wiped@gmail.com'],
+			fail_silently=False, # To Email
 			)
 
 		return render(request, 'booking.html', {
