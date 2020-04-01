@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.conf import settings
+
 
 def home(request):
 	return render(request, 'home.html', {})
@@ -53,11 +55,10 @@ def booking(request):
 		# send an email
 		booking = " Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Date: " + your_date + " Time: " + your_time + " Message: " + your_message
 		send_mail(
-			'Booking Request', # subject
+			Booking Request, # subject
 			booking, # message
 			your_email, # from email
-			your_email # from email
-			['info.wiped@gmail.com'], # To Email
+			info.wiped@gmail.com # To Email
 			)
 
 		return render(request, 'booking.html', {
