@@ -51,14 +51,13 @@ def booking(request):
 		your_message = request.POST['your-message']
 
 		# send an email
-		booking = "Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Date: " + your_date + " Time: " + your_time + " Message: " + your_message
+		booking = " Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Date: " + your_date + " Time: " + your_time + " Message: " + your_message
 		send_mail(
 			'Booking Request', # subject
 			booking, # message
 			your_email, # from email
-			message, #message
 			your_email # from email
-			['info@wiped.com', 'jarryd.strydom@icloud.com'], # To Email
+			['info.wiped@gmail.com'], # To Email
 			)
 
 		return render(request, 'booking.html', {
