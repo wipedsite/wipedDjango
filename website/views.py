@@ -41,6 +41,9 @@ def blog(request):
 def blog_details(request):
 	return render(request, 'blog_details.html', {})
 
+def ola_template(request):
+	return render(request, 'ola_template.html', {})
+
 
 def booking(request):
 	if request.method == "POST":
