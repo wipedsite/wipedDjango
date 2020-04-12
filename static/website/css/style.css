@@ -463,9 +463,9 @@ ul {
   .top-header-area .top-header-content a {
     display: inline-block;
     font-size: 12px;
-    color: #ffffff; }
+    color: #707070; }
     .top-header-area .top-header-content a i {
-      color: #ffffff;
+      color: #707070;
       margin-right: 5px; }
     .top-header-area .top-header-content a:last-child {
       margin-left: 30px; }
@@ -1367,7 +1367,8 @@ ul {
 .footer-area {
   position: relative;
   z-index: 1;
-  padding-top: 100px; }
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.0) }
 
 .single-footer-widget {
   position: relative;
