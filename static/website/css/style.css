@@ -368,7 +368,7 @@ ul {
   .section-heading .line {
     width: 70px;
     height: 4px;
-    background-color: #00aeef; }
+    background-color: #000000; }
   .section-heading.text-center .line {
     margin: 0 auto; }
   .section-heading.white h2 {
@@ -380,7 +380,7 @@ ul {
   line-height: 42px;
   right: 0;
   width: 40px;
-  background-color: #00aeef;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
   height: 40px;

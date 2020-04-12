@@ -29,8 +29,8 @@ def contact(request):
 def about(request):
 	return render(request, 'about.html', {})
 
-def pricing(request):
-	return render(request, 'pricing.html', {})
+def wipers(request):
+	return render(request, 'wipers.html', {})
 
 def service(request):
 	return render(request, 'service.html', {})
