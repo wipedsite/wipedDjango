@@ -10,6 +10,5 @@ urlpatterns = [
 	path('blog.html', views.blog, name="blog"),
 	path('blog_details.html', views.blog_details, name="blog_details"),
 	path('booking.html', views.booking, name="booking"),
-	path('ola_template.html', views.ola_template, name="ola_template"),
 ]
 
