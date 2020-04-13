@@ -8,6 +8,34 @@
 
 
 
+<div id="vdcont">
+  <div class="jquery-background-video-wrapper" style="background:#333 url(https://cdn.readyfundgo.com/wp-content/uploads/2018/05/31193731/rfg-video-bg.jpg);padding-bottom:220px;margin-bottom:-150px;">
+
+  <video id="bgvid" class="jquery-background-video" muted playsinline loop autoplay poster="https://cdn.readyfundgo.com/wp-content/uploads/2018/05/31193731/rfg-video-bg.jpg" >
+    <source src="https://cdn.readyfundgo.com/wp-content/uploads/2014/10/10102407/720p-no-title-no-sound-dark.webm" type="video/webm">
+    <source src="https://cdn.readyfundgo.com/wp-content/uploads/2014/10/10124417/720p-no-title-no-sound-dark.mp4" type="video/mp4">
+  </video>
+  <div class="container text-center" style="position:relative;color:#fff;margin-top:220px">
+      <div class="video-hero--content">
+        </p>
+<h1>We use the power of the crowd</h1>
+<p class="lead">To get your idea off the ground</p>
+<p><a class="btn btn-success btn-lg" style="font-size: 130%; padding: 15px 40px;" href="/start/">Get your idea funded</a><br>
+      </div>
+  </div>
+</div>
+</div>
+<script>
+  $('#bgvid').bgVideo({
+  fullScreen: false, // Sets the video to be fixed to the full window - your <video> and it's container should be direct descendents of the <body> tag
+  showPausePlay: false,
+  pausePlayXPos: 'right', // left|right|center
+  pausePlayYPos: 'bottom', // top|bottom|center
+  pausePlayXOffset: '15px', // pixels or percent from side - ignored if positioned center
+  pausePlayYOffset: '15px', // pixels or percent from top/bottom - ignored if positioned center
+});
+
+</script>
 
 
 
@@ -44,7 +72,7 @@
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="{% static 'website/img/bg-img/15.jpg' %}" alt="">
+            <img src="{% static 'website/img/bg-img/15.png' %}" alt="">
           </div>
         </div>
         <!-- About Content -->
@@ -55,33 +83,32 @@
               <h2>About Us</h2>
               <div class="line"></div>
             </div>
-            <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis zurna, nec finibusmi velit advertisis. Proin vitae odin quis magna aliquet laciniae. Etiam auctor, nisi vel. Pellentesque ultrices nisl quam iaculis, nec pulvinar
-              augue.</p>
+            <p>Wiped is an on-demand waterless carwash service. Our three core principles are: Sustainability. Convinience. Excellence.</p>
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
-              <h6>Experience Dentist</h6>
+              <h6>Waterless</h6>
               <div id="bar1" class="barfiller">
                 <span class="tip"></span>
-                <span class="fill" data-percentage="80"></span>
+                <span class="fill" data-percentage="100"></span>
               </div>
             </div>
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
-              <h6>Modern Equipment</h6>
+              <h6>Environmentally Friendly</h6>
               <div id="bar2" class="barfiller">
                 <span class="tip"></span>
-                <span class="fill" data-percentage="65"></span>
+                <span class="fill" data-percentage="100"></span>
               </div>
             </div>
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
-              <h6>Friendly Staff</h6>
+              <h6>Revenue Back into The Community</h6>
               <div id="bar3" class="barfiller">
                 <span class="tip"></span>
-                <span class="fill" data-percentage="85"></span>
+                <span class="fill" data-percentage="10"></span>
               </div>
             </div>
           </div>
@@ -95,127 +122,29 @@
     <div class="dento-border clearfix"></div>
   </div>
 
-  <!-- Cool Facts Area Start -->
-  <section class="dento-cta-area">
-    <div class="container">
-      <div class="row">
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_genius"></i>
-            <h2><span class="counter">20</span></h2>
-            <h5>Years Of Experience</h5>
-          </div>
-        </div>
+  
 
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_heart_alt"></i>
-            <h2><span class="counter">700</span>+</h2>
-            <h5>Happy Patients</h5>
-          </div>
-        </div>
+  
 
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_book_alt"></i>
-            <h2><span class="counter">120</span></h2>
-            <h5>Certificate</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_id"></i>
-            <h2><span class="counter">40</span>+</h2>
-            <h5>Dentist</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Cool Facts Area End -->
-
-  <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/7.jpg' %});">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Testimonials Slides -->
-          <div class="testimonials-slides owl-carousel">
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Testimonials Area End ***** -->
-
-  <!-- ***** Dento Dentist Area Start ***** -->
+  <!-- ***** Team Area Start ***** -->
   <section class="dentist-area section-padding-100-0">
     <div class="container">
       <div class="row">
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center">
-            <h2>Our Dentist</h2>
+            <h2>Our Executive Team</h2>
             <div class="line"></div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <!-- Single Dentist Area -->
+        <!-- Single Employee Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
             <img src="{% static 'website/img/bg-img/9.png' %}" alt="">
-            <!-- Dentist Content -->
+            <!-- Employee Content -->
             <div class="dentist-content">
               <!-- Social Info -->
               <div class="dentist-social-info">
@@ -223,20 +152,20 @@
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-google-plus"></i></a>
               </div>
-              <!-- Dentist Info -->
+              <!-- Employee Info -->
               <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
+                <h5>Jarryd Strydom</h5>
+                <p>Founder & CEO</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Single Dentist Area -->
+        <!-- Single Employee Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
             <img src="{% static 'website/img/bg-img/10.png' %}" alt="">
-            <!-- Dentist Content -->
+            <!-- Employee Content -->
             <div class="dentist-content">
               <!-- Social Info -->
               <div class="dentist-social-info">
@@ -244,16 +173,16 @@
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-google-plus"></i></a>
               </div>
-              <!-- Dentist Info -->
+              <!-- Employee Info -->
               <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
+                <h5>""</h5>
+                <p>Marketing</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Single Dentist Area -->
+        <!-- Single employee Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
             <img src="{% static 'website/img/bg-img/11.png' %}" alt="">
@@ -267,8 +196,8 @@
               </div>
               <!-- Dentist Info -->
               <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
+                <h5>Jason Bruce-Brand/h5>
+                <p>COO</p>
               </div>
             </div>
           </div>
