@@ -4,41 +4,34 @@
 {% block meta_description %}Register to become a Wiper {% endblock %}
 {% block content %}
 
-<section>
-            <div class="main-slider">
-                <div class="banner-slider">
-                        <div>
-                            <div class="slick-img" style="background: url('./webstatic/img/ola-drive/slider/entertainment.jpg');"></div>
-                            <!-- <img src="./webstatic/img/ola-drive/slider/entertainment.jpg"> -->
-                            <div class="text-overlay">
-                                <div class="title">Easy Money</div>
-                                <div class="text">Choose when & where you want to work</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slick-img" style="background: url('./webstatic/img/ola-drive/slider/package.jpg');"></div>
-                            <div class="text-overlay">
-                                <div class="title">Low Commission</div>
-                                <div class="text">Take 80% of the charged fee</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slick-img" style="background: url('./webstatic/img/ola-drive/slider/top-quality.jpg');"></div>
-                            <div class="text-overlay">
-                                <div class="title">Team driven</div>
-                                <div class="text">Wiped is a community not a company</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slick-img" style="background: url('./webstatic/img/ola-drive/slider/built-in.jpg');"></div>
-                            <div class="text-overlay">
-                                <div class="title">24/7 support</div>
-                                <div class="text">We are here to help you</div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </section>
+<div id="vdcont">
+  <div class="jquery-background-video-wrapper" style="background:#333 url(https://cdn.readyfundgo.com/wp-content/uploads/2018/05/31193731/rfg-video-bg.jpg);padding-bottom:220px;margin-bottom:-150px;">
+
+  <video id="bgvid" class="jquery-background-video" muted playsinline loop autoplay poster="https://cdn.readyfundgo.com/wp-content/uploads/2018/05/31193731/rfg-video-bg.jpg" >
+    <source src="https://cdn.readyfundgo.com/wp-content/uploads/2014/10/10102407/720p-no-title-no-sound-dark.webm" type="video/webm">
+    <source src="https://cdn.readyfundgo.com/wp-content/uploads/2014/10/10124417/720p-no-title-no-sound-dark.mp4" type="video/mp4">
+  </video>
+  <div class="container text-center" style="position:relative;color:#fff;margin-top:220px">
+      <div class="video-hero--content">
+        </p>
+<h1>We use the power of the crowd</h1>
+<p class="lead">To get your idea off the ground</p>
+<p><a class="btn btn-success btn-lg" style="font-size: 130%; padding: 15px 40px;" href="/start/">Get your idea funded</a><br>
+      </div>
+  </div>
+</div>
+</div>
+<script>
+  $('#bgvid').bgVideo({
+  fullScreen: false, // Sets the video to be fixed to the full window - your <video> and it's container should be direct descendents of the <body> tag
+  showPausePlay: false,
+  pausePlayXPos: 'right', // left|right|center
+  pausePlayYPos: 'bottom', // top|bottom|center
+  pausePlayXOffset: '15px', // pixels or percent from side - ignored if positioned center
+  pausePlayYOffset: '15px', // pixels or percent from top/bottom - ignored if positioned center
+});
+
+</script>
 
        
 <!-- Wiper Application Area Start -->
