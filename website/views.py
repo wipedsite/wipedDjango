@@ -54,7 +54,7 @@ def booking(request):
 		# send an email
 		booking = " Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Message: " + your_message
 		send_mail(
-			'Booking Request', # subject
+			'Wiper Application', # subject
 			booking, # message
 			your_email, # from email
 			['info.wiped@gmail.com'],
