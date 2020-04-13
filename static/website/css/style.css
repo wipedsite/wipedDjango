@@ -423,7 +423,7 @@ ul {
     background-color: transparent;
     color: #00aeef; }
   .dento-btn.btn-2:focus, .dento-btn.btn-2:hover {
-    background-color: #000000;
+    background-color: #ffffff;
     color: #00aeef; }
   .dento-btn.booking-btn {
     color: #ffffff !important;
@@ -435,7 +435,7 @@ ul {
     .dento-btn.booking-btn:focus, .dento-btn.booking-btn:hover {
       font-size: 12px;
       font-weight: 600;
-      background-color: #ffffff;
+      background-color: #000000;
       color: #00aeef !important; }
 
 .header-area {
@@ -502,7 +502,8 @@ ul {
       padding: 0 15px;
       font-weight: 600;
       font-size: 14px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #ffffff; }
       .classy-nav-container .classy-navbar .classynav ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li a:hover {
         color: #00aeef; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
