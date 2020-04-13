@@ -423,7 +423,7 @@ ul {
     background-color: transparent;
     color: #00aeef; }
   .dento-btn.btn-2:focus, .dento-btn.btn-2:hover {
-    background-color: #ffffff;
+    background-color: #000000;
     color: #00aeef; }
   .dento-btn.booking-btn {
     color: #ffffff !important;
