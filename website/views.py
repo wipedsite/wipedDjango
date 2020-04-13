@@ -49,12 +49,10 @@ def booking(request):
 		your_phone = request.POST['your-phone']
 		your_email = request.POST['your-email']
 		your_address = request.POST['your-address']
-		your_time = request.POST['your-time']
-		your_date = request.POST['your-date']
 		your_message = request.POST['your-message']
 
 		# send an email
-		booking = " Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Date: " + your_date + " Time: " + your_time + " Message: " + your_message
+		booking = " Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Message: " + your_message
 		send_mail(
 			'Booking Request', # subject
 			booking, # message
@@ -68,8 +66,6 @@ def booking(request):
 			'your_phone': your_phone,
 			'your_email': your_email,
 			'your_address': your_address,
-			'your_time': your_time,
-			'your_date': your_date,
 			'your_message': your_message
 			})
 
