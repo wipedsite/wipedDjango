@@ -456,7 +456,7 @@ img {
   display: block;
 }
 .breakpoint-on .classy-navbar .classy-menu {
-  background-color: #ffffff;
+  background-color: #000000;
   position: fixed;
   top: 0;
   left: -310px;
@@ -552,7 +552,7 @@ img {
 }
 .breakpoint-on .classynav ul li.has-down.active>a:after,
 .breakpoint-on .classynav ul li.megamenu-item.active>a:after {
-  color: #2ecc71;
+  color: #ffffff;
 }
 /* Dark Theme CSS */
 .dark.classy-nav-container {
